@@ -32,7 +32,7 @@ export class MusicMajik extends React.Component {
               sort my playlists. The big challenge was not only hooking up the Spotify 
               Authentification, but learning ReactJS while doing it. I knew it would be a 
               large project for me to do solo but I was pretty happy with how it turned out.
-              It was also fun trying to comform to a design trend while adhering to Spotify's 
+              It was also fun trying to conform to a design trend while adhering to Spotify's 
               logo usages. In the end I really like the look on mobile but wish I drafted 
               something different for larger screens. 
             </Text>
@@ -42,13 +42,13 @@ export class MusicMajik extends React.Component {
             <Tools>ReactJS (HTML5/CSS3/Javascript) - Express</Tools>
             <Text>
               This app's purpose was to sort the user's Spotify music. I developed it on my own 
-              using ReactJS as well as an Express server to manage Spotify's authentification process. 
+              using ReactJS as well as an Express server to manage Spotify's authentication process. 
               <br/><br/>
               Once logged in, the user can view their top artists and songs as well as their current playlists. 
               If they select a playlist they will see all songs with their respective artists. If 
               they click the button at the top the app will automatically create a new playlist with 
               the same name with a plus sign at the end. That playlist will have all of the same songs 
-              but they will be sorted by Spotify's interpretation of how energenic the song is. This playlist 
+              but they will be sorted by Spotify's interpretation of how energetic the song is. This playlist 
               is now visible to the user and does not replace the old playlist. (This is to allow the user 
               to decide if they like how it was sorted and so they aren't worried the app will mess something up)
               <br/><br/>
@@ -61,7 +61,7 @@ export class MusicMajik extends React.Component {
               return a single decimal number for me to sort. 
               <br/><br/>
               For the design I tried the trend of Neomorphism. The essence of the trend is to make the screen 
-              look like it has soft 3D buttons. I knew that this was going to be hard since I also wanted my app to 
+              looks like it has soft 3D buttons. I knew that this was going to be hard since I also wanted my app to 
               feel like it was part of the Spotify ecosystem. I quickly realized that Spotify's background colors were 
               very dark and the design looked best on brighter backgrounds. I settled on a dark navy blue which 
               looks a lot better on bright screens. I made the site responsive as well and really enjoyed how it 

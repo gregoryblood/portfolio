@@ -75,6 +75,17 @@ export const Img = styled.img `
     border-radius: 8px;
     
 `;
+export const ImgLong = styled.img `
+    margin: 30px auto 30px auto;
+    display: block;
+    width: 40%;
+    max-width: 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 8px;
+    
+`;
 export const Tools = styled.div`
     margin: 10px 0; 
     font-style: italic;

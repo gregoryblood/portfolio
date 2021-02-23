@@ -35,7 +35,7 @@ export class MasterBlaster extends React.Component {
               There was a 72 hour time limit with the theme of 'Out of Control. <Link>This version</Link> was created first and boy, 
               did I feel a crunch. I could only work on it two days out of the three and had to do all the tricks I knew.
               I quickly just started building just the gameplay not caring about graphics at all. I iterated through a few 
-              ideas but settled on this astroid like game. The theme was a fun way to focus my ideas and it was really fun stretching 
+              ideas but settled on this asteroid  like game. The theme was a fun way to focus my ideas and it was really fun stretching 
               the meaning of the theme.<br/><br/>
               I ended up making the player lose control of their ship after a certain amount of time while simultaneously increasing their fire rate.
               This made the player carefully predict where the ship was going and would point to score points and not lose health. 
@@ -58,9 +58,9 @@ export class MasterBlaster extends React.Component {
               can only spin the ship, it is the strongest way to defeat enemies. 
               <br/><br/>
               Their objective is to destroy enemies to increase their score. There are five different enemies each 
-              having drastically behaiviors and mechanics. They are introduced at different point thresholds to increase 
+              having drastically behaviors and mechanics. They are introduced at different point thresholds to increase 
               difficulty. At 200, 400, and 600 points, a boss spawns with completely new mechanics and take multiple hits 
-              to defeat. The game is intended to be infinitly long lasting with increasing difficulty.
+              to defeat. The game is intended to be infinitely long lasting with increasing difficulty.
               <br/><br/>
               As enemies are destroyed they have a chance to drop coins, that the player can exchange at milestones to 
               upgrade their ship/stats. Some of the possible upgrades compliment the choices, or even 

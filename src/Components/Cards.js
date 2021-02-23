@@ -3,8 +3,10 @@ import styled from '@emotion/styled';
 import whattowear from '../Images/whattowear.png';
 import ships from '../Images/ships.png';
 import mb3 from '../Images/mb3.png';
+import kg1 from '../Images/kg1.PNG';
 import ph1 from '../Images/ph1.jpg';
 import mm1 from '../Images/mm1.png';
+import osu from '../Images/osu.PNG';
 import { NavLink } from 'react-router-dom';
 
 const CardArea = styled.div`
@@ -55,6 +57,12 @@ const CardTitle = styled.div `
   font-weight: 800;
   color: black;
 `;
+const Games = styled.div `
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0;
+`;
 const CardDescription = styled.div `
   z-index: 1;
   width: 80%;
@@ -70,11 +78,12 @@ const CardDescription = styled.div `
 
 function Cards() {  
   return (
-    <CardArea>
-        <Card to={`/masterblaster`}>
-          <Img src={ mb3 }/>
+    <React.Fragment>
+      <CardArea>
+        <Card to={`/capstone`}>
+          <Img src={ osu }/>
           <CardDescription>
-          A Retro Game with a Twist
+          The 'I' in 'Team'
           </CardDescription>
         </Card>
         <Card to={`/purehoney`}>
@@ -89,45 +98,38 @@ function Cards() {
           Organize your Music... Fast
           </CardDescription>
         </Card>
-        <Card to={`/ships`}>
-          <Img src={ships}/>
-          <CardDescription>
-          A Party Game for Pirates
-          </CardDescription>
-        </Card>
         <Card to={`/whattowear`}>
           <Img src={whattowear}/>
           <CardDescription needSpace>
           The Most Fail-Safe Weather App
           </CardDescription>
         </Card>
-        
-        {/*
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Oblivion</CardTitle>
+      </CardArea>
+      <Games>Games</Games> 
+      <CardArea>
+        <Card to={`/kings-gambit`}>
+          <Img src={ kg1 }/>
           <CardDescription>
-          Physics, puzzles, horror.
+          Chess-like + Rogue-like
           </CardDescription>
         </Card>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Nature Simulation</CardTitle>
+        <Card to={`/master-blaster`}>
+          <Img src={ mb3 }/>
           <CardDescription>
-          Nature simulating machine learning
+          A Retro Game with a Twist
           </CardDescription>
         </Card>
-        <Card to={`/whattowear`}>
-          <Img src={whattowear}/>
-          <CardTitle>Affair of Honor</CardTitle>
+        <Card to={`/ships`}>
+          <Img src={ships}/>
           <CardDescription>
-          A party game for competitive people
+          A Party Game for Pirates
           </CardDescription>
         </Card>
-        
-        */}
-        
-    </CardArea>
+         
+      </CardArea>
+    </React.Fragment>
+    
+    
   );
 }
 

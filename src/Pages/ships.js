@@ -29,10 +29,10 @@ export class Ships extends React.Component {
             </Header>
             <Tools>Interactive Controls - Unity Fundamentals - Gameplay Fundamentals</Tools>
             <Text>
-              After following lot of tutorials for using Unity, I finally felt confident to work on my own project. 
+              After following a lot of tutorials for using Unity, I finally felt confident to work on my own project. 
               I had an idea in mind to start and just went to work. After a lot of Googling I finished the first 
               version, but quickly realized the first build is only a portion of the work. I playtested the game 
-              with friends and family and learned how to use feedback without loosing my vision of the game. 
+              with friends and family and learned how to use feedback without losing my vision of the game. 
             </Text>
             <Portal height="400" src="https://www.youtube.com/embed/DTujndYq82E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="fullscreen"></Portal>
 
