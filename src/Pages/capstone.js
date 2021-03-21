@@ -59,7 +59,7 @@ export class Capstone extends React.Component {
             </Text>
             <ImgLong src={capstone}/>
             <Header>
-              Blog
+              Fall Blog
             </Header>
             <Tools>"Plans are useless but planning is indispensable." - Dwight D. Eisenhower</Tools>
             <Text>
@@ -83,6 +83,9 @@ export class Capstone extends React.Component {
           what React frameworks look like. I also set a timeline of the entire app development for us to follow. 
               <br/><br/>
             </Text>
+            <Header>
+              Winter Blog
+            </Header>
             <Tools>"Everyone has a plan until they get punched in the mouth." - Mike Tyson</Tools>
             <Text>
               The biggest challenge hasn't been the technical side of the project but the team side. The term started off seeming 

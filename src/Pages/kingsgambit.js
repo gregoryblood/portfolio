@@ -20,7 +20,7 @@ export class KingsGambit extends React.Component {
         <Core>
           <Body>
             <Buttons>
-              <a href='https://gregoryblood.itch.io/kings-gambit' target='_blank'><HotButton>Play</HotButton></a>
+              <a href='https://itch.io/embed-upload/3388342?color=1b6729' target='_blank'><HotButton>Play</HotButton></a>
             </Buttons>
             <Header>
               What I Learned

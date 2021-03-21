@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Cards from './Cards';
 
-const color = 'white';
+const color = '#F2F2F2';
 const mainText = 'black';
 const flavorText = "gray"
 const flavorColor = "#20a3fa"
@@ -69,14 +69,14 @@ export const Buttons = styled.ul `
 export const HotButton = styled.button `
   text-decoration: none;
   border-style: solid;
-  border-color: white;
+  border-color: ${color};
   border-width: 4px;
   border-radius: 8px;
   
   display: inline-block;
   padding: 30px 50px;
   font-size: 22px;
-  color: white;
+  color: ${color};
   background-color: #1c1c1c;
   width: 200px;
   margin: 20px 40px 0 0px;
@@ -87,7 +87,7 @@ export const HotButton = styled.button `
     cursor: pointer;
     border-color: ${flavorColor};
     color: black;
-    background-color: white;
+    background-color: ${color};
   }
 `;
 export const Disclaimer = styled.div `
@@ -95,9 +95,14 @@ export const Disclaimer = styled.div `
   font-weight: bold;
   color: red;
   text-align: center;
-  padding: 40px 0;
+  padding: 0px 0;
 `;
-
+const Boxes = styled.div `
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+`;
 const Input_ = styled.input `
   width: 100%;
   height: 40px;
@@ -105,7 +110,8 @@ const Input_ = styled.input `
   border-radius: 8px;
   font-size: 24px;
   margin: 10px 0;
-  padding: 4px 0px 4px 0px;
+  padding: 8px;
+  background-color: #F2F2F2;
   &:focus {
     outline: none !important;
   }
@@ -114,15 +120,14 @@ const Text_ = styled.textarea `
   width: 100%;
   height: 80px;
   border: 2px solid ${flavorColor};
-  font-weight: 600;
   font-family: inherit;
   border-radius: 8px;
   font-size: 24px;
   margin: 10px 0;
-  padding: 4px 0px 4px 0px;
+  padding: 8px;
   resize: none;
   overflow: auto;
-
+  background-color: #F2F2F2;
   &:focus {
     outline: none !important;
   }
@@ -133,10 +138,9 @@ const Submit_ = styled.a `
   width: 100%;
   border: 2px solid ${flavorColor};
   border-radius: 8px;
-  background: white;
+  background: ${color};
   margin: 20px auto;
   padding: 10px 0;
-  font-weight: bold;
   font-size: 24px;
   color: black;
   text-decoration: none;
@@ -144,7 +148,7 @@ const Submit_ = styled.a `
   -webkit-transition-duration: 0.4s;
   &:hover {
     background-color: ${flavorColor};
-    color: white;
+    color: ${color};
     cursor: pointer;
   }
 `;
@@ -184,7 +188,7 @@ export class Body extends React.Component{
               Check out my resumé for some technologies I have been working with.
             </Text>
             <Buttons>
-              <a href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank"><HotButton>Resumé</HotButton></a>
+              <a href="https://raw.githubusercontent.com/gregoryblood/gregoryblood.github.io/master/website/resume.pdf" target="_blank"><HotButton>Resumé</HotButton></a>
               <a href="https://www.linkedin.com/in/gregoryblood" target="_blank"><HotButton>LinkedIn</HotButton></a>
               <a href="https://github.com/gregoryblood" target="_blank"><HotButton>GitHub</HotButton></a>
             </Buttons>
@@ -200,8 +204,11 @@ export class Body extends React.Component{
             <Header>Send me a message!</Header>
             <Flavor>Especially if you have a job opportunity...</Flavor>
             <Text>Have a comment on the website? Have a specific question? Just want to talk? Email me!</Text>
+            <Boxes>
               <Input_ value = {this.state.value} placeholder='Subject' onChange={this.handleSubject}/><br/>
               <Text_ rows="4" value={this.state.value} placeholder= 'Body' onChange={this.handleBody}/>
+            </Boxes>
+            
             <Submit_ href={`mailto: gregoryblood1998@gmail.com?subject=${this.state.subject}&body=${this.state.body}`}>Send!</Submit_> 
           </Section>
         </Core>

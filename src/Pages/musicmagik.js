@@ -1,6 +1,9 @@
 import React from 'react';
 import {PTitle, Body, Core, Header, Flavor, Portal, TitleBar,
-        Tools, Text} from './style';
+        Tools, Text, Img, ImgLong} from './style';
+import mm2 from '../Images/mm2.png';
+import mm3 from '../Images/mm3.png';
+import mm4 from '../Images/mm4.png'
 import {Buttons, HotButton, Disclaimer} from '../Components/Body';
 
 export class MusicMajik extends React.Component {  
@@ -17,8 +20,9 @@ export class MusicMajik extends React.Component {
         </TitleBar>
         <Core>
           <Body>
-            <Disclaimer>This takes a moment to load</Disclaimer>
-            <Portal src="https://spotify-organizer-web.herokuapp.com/" width="540" height="400"></Portal>
+            <Img src={mm3} />
+            <Disclaimer>This takes a moment to load and requires a spotify account</Disclaimer>
+
             <Buttons>
               <a href='https://spotify-organizer-web.herokuapp.com/' target='_blank'><HotButton>Visit</HotButton></a>
               <a href='https://github.com/gregoryblood/spotifyApp' target='_blank'><HotButton>GitHub</HotButton></a>
@@ -36,6 +40,7 @@ export class MusicMajik extends React.Component {
               logo usages. In the end I really like the look on mobile but wish I drafted 
               something different for larger screens. 
             </Text>
+            <ImgLong src={mm2}/>
             <Header>
               About
             </Header>
@@ -68,7 +73,9 @@ export class MusicMajik extends React.Component {
               turned out on mobile. When I go back to this project I will probably update the overall design 
               strategy to make it more 'Spotifyie'.
             </Text>
+            <Img src={mm4} />
           </Body>
+          
         </Core>
       </React.Fragment>
     );

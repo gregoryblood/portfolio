@@ -28,6 +28,7 @@ const Card = styled(NavLink)`
   width: 300px;
   height: 200px;
   display: block;
+  
   &:hover {
     cursor: pointer;
   }
@@ -45,7 +46,7 @@ const Img = styled.img `
   &:hover {
     opacity: 0.35;
     filter: blur(8px);
-    -webkit-filter: blur(4px);
+    -webkit-filter: blur(8px);
   }
   
 `;
@@ -79,6 +80,7 @@ const CardDescription = styled.div `
 function Cards() {  
   return (
     <React.Fragment>
+      <br/>
       <CardArea>
         <Card to={`/capstone`}>
           <Img src={ osu }/>

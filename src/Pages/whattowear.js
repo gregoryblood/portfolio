@@ -1,7 +1,7 @@
 import React from 'react';
 import {PTitle, Body, Core, Header, Flavor, Portal, TitleBar,
         Tools, Text} from './style';
-import {Buttons, HotButton} from '../Components/Body';
+import {Buttons, HotButton, Disclaimer} from '../Components/Body';
 
 export class WhatToWear extends React.Component {  
   componentDidMount() {
@@ -18,6 +18,8 @@ export class WhatToWear extends React.Component {
         <Core>
           <Body>
             <Portal src="https://www.gregoryblood.me/weatherapi/" width="540" height="450"></Portal>
+            <Disclaimer>Due to DarkSky's API changes, this no longer works</Disclaimer>
+
             <Buttons>
               <a href='https://www.gregoryblood.me/weatherapi/' target='_blank'><HotButton>Visit</HotButton></a>
               <a href='https://github.com/gregoryblood/gregoryblood.github.io/tree/master/weatherapi' target='_blank'><HotButton>GitHub</HotButton></a>

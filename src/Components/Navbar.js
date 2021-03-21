@@ -76,11 +76,11 @@ export class Navbar extends React.Component {
           theposition: scrolled,
         })
         if (this.state.theposition > 0.1) {
-            console.log ("here");
+            
         }
       }
     render () {
-        if (this.state.theposition > 0.1)
+        if (this.state.theposition > 0.4)
         return (
             <React.Fragment>
                 <Link

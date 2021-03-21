@@ -13,7 +13,11 @@ const TitleDiv = styled.div `
   font-weight: 800;
   
   text-decoration:none;
-  background-color: #00a3f5;  
+  background-color: #1cd2f0;
+  background-image: linear-gradient(160deg, #1cd2f0 0%, #1078ff 100%);
+
+
+ 
 `;
 
 const Terminal = styled.div`
@@ -25,15 +29,45 @@ const Terminal = styled.div`
   width: 70%;
   background-color: black;  
   border-radius: 8px;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
   @media(max-width: 768px) {
     width: 100%;
     left: 0;
     top: 0;
     margin: 0 auto;
-    height: 450px;
+    height: 475px;
   }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
 `;
 const Dr = styled.div`
+
   color: #73a6ff;
   display: block;
   width: 200px;
@@ -66,6 +100,7 @@ const File = styled.a`
   }
 `;
 const Words = styled.div`
+
   line-height: 100%;
   font-size: 28px;
   margin: -10px 20px;
@@ -88,6 +123,7 @@ const TopBar = styled.div`
   background-color: #2d2d2d;
   width: 100%;
   height: 30px;
+  
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   @media(max-width: 768px) {
@@ -123,7 +159,7 @@ const Helper = styled.div `
   font-size: 36px;
   font-weight: 800;
   padding: 8px;
-  margin: 475px auto 0 auto;
+  margin: 85vh auto 0 auto;
   color: white;
   border-radius: 8px;
   @media(max-width: 768px) {
@@ -195,7 +231,7 @@ class Title extends React.Component {
                       duration={400}>
               <Dr>contact</Dr>
               </Link>
-              <File href="https://github.com/gregoryblood/gregoryblood.github.io/blob/master/website/resume.pdf" target="_blank">resume.pdf</File>
+              <File href="https://raw.githubusercontent.com/gregoryblood/gregoryblood.github.io/master/website/resume.pdf" target="_blank">resume.pdf</File>
               <File href = "mailto: gregoryblood1998@gmail.com">e-mail.exe</File>
             
             </Grid>
